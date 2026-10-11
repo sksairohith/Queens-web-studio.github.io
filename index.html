@@ -1,0 +1,173 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="The personal portfolio of sa ro hi, an aspiring web developer.">
+  <title>sa ro hi | Aspiring Web Developer</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <canvas id="particleCanvas" aria-hidden="true"></canvas>
+  <header class="header">
+    <nav class="navbar container" aria-label="Main navigation">
+      <a class="logo" href="#home">sa ro hi<span>.</span></a>
+
+      <button class="menu-toggle" id="menuToggle"
+        aria-label="Open navigation menu"
+        aria-expanded="false" aria-controls="navLinks">
+        ☰
+      </button>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero container" id="home">
+      <div class="hero-content">
+        <p class="eyebrow">WELCOME TO MY PORTFOLIO</p>
+        <h1>Hi, I'm <span>sa ro hi</span></h1>
+        <h2>Aspiring Web Developer</h2>
+        <p class="hero-description">
+          I'm learning to turn creative ideas into beautiful,
+          useful and responsive websites.
+        </p>
+        <div class="hero-buttons">
+          <a class="button primary-button" href="#projects">Explore My Work</a>
+          <a class="button secondary-button" href="#contact">Contact Me</a>
+        </div>
+      </div>
+      
+    </section>
+
+    <section class="section container" id="about">
+      <p class="eyebrow">GET TO KNOW ME</p>
+      <h2 class="section-title">About <span>Me</span></h2>
+      <div class="about-card">
+        <p>
+          Hello! I'm sa ro hi, an aspiring web developer who enjoys
+          learning about technology and building things for the web.
+          I'm developing my skills in HTML, CSS, JavaScript and Python.
+        </p>
+        <p>
+          My goal is to create websites that look great, work smoothly
+          on different devices and provide a good user experience.
+          This portfolio is one of my learning projects.
+        </p>
+      </div>
+    </section>
+
+    <section class="section container" id="skills">
+      <p class="eyebrow">WHAT I'M LEARNING</p>
+      <h2 class="section-title">My <span>Skills</span></h2>
+      <div class="card-grid">
+        <article class="info-card">
+          <div class="card-icon">🌐</div>
+          <h3>HTML</h3>
+          <p>Building the structure of web pages.</p>
+        </article>
+        <article class="info-card">
+          <div class="card-icon">🎨</div>
+          <h3>CSS</h3>
+          <p>Designing layouts, colors and responsive pages.</p>
+        </article>
+        <article class="info-card">
+          <div class="card-icon">⚡</div>
+          <h3>JavaScript</h3>
+          <p>Adding interaction and dynamic features.</p>
+        </article>
+        <article class="info-card">
+          <div class="card-icon">🐍</div>
+          <h3>Python</h3>
+          <p>Practising programming and problem solving.</p>
+        </article>
+        <article class="info-card">
+          <div class="card-icon">🧊</div>
+          <h3>Blender</h3>
+          <p>Exploring 3D design and creative projects.</p>
+        </article>
+        <article class="info-card">
+          <div class="card-icon">💡</div>
+          <h3>Problem Solving</h3>
+          <p>Learning by building, testing and improving.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section container" id="projects">
+      <p class="eyebrow">WHAT I'M BUILDING</p>
+      <h2 class="section-title">My <span>Projects</span></h2>
+      <div class="card-grid">
+        <article class="info-card project-card">
+          <span class="project-number">PROJECT 01</span>
+          <h3>Personal Portfolio</h3>
+          <p>A responsive website to introduce myself and showcase my skills.</p>
+          <span class="tag">HTML · CSS · JavaScript</span>
+        </article>
+        <article class="info-card project-card">
+          <span class="project-number">PROJECT 02</span>
+          <h3>Python Practice</h3>
+          <p>A collection of small Python programs as I improve my coding skills.</p>
+          <span class="tag">Python</span>
+        </article>
+        <article class="info-card project-card">
+          <span class="project-number">PROJECT 03</span>
+          <h3>Coming Soon</h3>
+          <p>I'm learning new tools and preparing more projects to share here.</p>
+          <span class="tag">In Progress</span>
+        </article>
+      </div>
+      <p class="note">
+        These are starter project descriptions. Update them as you complete
+        your own projects.
+      </p>
+    </section>
+
+    <section class="section container" id="contact">
+      <p class="eyebrow">LET'S CONNECT</p>
+      <h2 class="section-title">Contact <span>Me</span></h2>
+      <div class="contact-card">
+        <p>
+          Have a question or want to talk about web development?
+          Send me a message using the form below.
+        </p>
+
+        <form id="contactForm">
+          <label for="visitorName">Your name</label>
+          <input id="visitorName" name="visitorName"
+            type="text" placeholder="Enter your name" required>
+
+          <label for="visitorEmail">Your email</label>
+          <input id="visitorEmail" name="visitorEmail"
+            type="email" placeholder="Enter your email" required>
+
+          <label for="visitorMessage">Your message</label>
+          <textarea id="visitorMessage" name="visitorMessage"
+            rows="5" placeholder="Write your message..." required></textarea>
+
+          <button class="button primary-button" type="submit">
+            Prepare Email
+          </button>
+          <p class="form-note" id="formNote" aria-live="polite">
+            This form opens your email app; it does not send messages directly.
+          </p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© <span id="currentYear"></span> sa ro hi · Built while learning web development.</p>
+    <a href="#home">Back to top ↑</a>
+  </footer>
+</body>
+</html>
